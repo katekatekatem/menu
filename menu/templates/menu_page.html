@@ -1,0 +1,15 @@
+{% load menu_tags %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Menu Page</title>
+  </head>
+  <body>
+    <ul>
+      {% autoescape off %}
+      {% draw_menu 'main_menu' %}
+      {% endautoescape %}
+    </ul>
+  </body>
+</html>
